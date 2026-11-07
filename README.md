@@ -1,7 +1,6 @@
 # Freiflächen verwalten: Skyline und MaxRects – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-skyline-maxrects-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-skyline-maxrects-demo.streamlit.app/)**
 
 Stück 8 der Konzepte-Reihe **„Packen: Reihenfolge und Platzierungsregel“** für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (ein Verfahren mit wachsendem Beispiel: eine Packung entsteht aus einer Reihenfolge der Teile und einer Regel, wohin das nächste kommt). Stück 7 hat Rechtecke in Regale gezwungen; diese Demo verwaltet stattdessen den **freien Platz** im Behälter (Skyline: die Oberkante der gesetzten Rechtecke, MaxRects: die Liste aller größten freien Rechtecke) und fragt, ob der Sortierschlüssel, der beim Regal der beste war, auch hier der beste ist. Die Fall-Demos zu Zuschnitt und Paletten zeigen die Anwendung samt Kostenmodell; diese Demo erklärt den Mechanismus davor.
 
