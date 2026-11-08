@@ -165,7 +165,7 @@ for r in oz:
     tab2.append(f"| {C.VERTEILUNG_KURZ[r['verteilung']]} {r['n']}{offen} | {f(r['regal'])} | {f(r['skyline'])} | {f(r['maxrects'])} |")
 st.markdown("\n".join(tab2))
 st.caption(
-    "Anteil der entschiedenen Instanzen, in denen die Kombination genau das Optimum braucht: Regal mit Höhe, Skyline mit Fläche, MaxRects BSSF mit Fläche (jeweils der beste Schlüssel des Verfahrens). "
+    "Anteil der entschiedenen Instanzen, in denen die Kombination genau das Optimum braucht: Regal mit Höhe, Skyline mit Fläche, MaxRects BSSF mit Fläche (jeweils der Schlüssel, der meist am besten ist). "
     "„offen“ hinter dem Namen: Zahl der nicht entschiedenen Instanzen; die entschiedenen sind die leichteren. Das Optimum gilt über alle Packungen."
 )
 kind, text = verdict_optimum(oz)

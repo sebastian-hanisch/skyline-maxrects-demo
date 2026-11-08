@@ -6,7 +6,7 @@ Stück 8 der Konzepte-Reihe **„Packen: Reihenfolge und Platzierungsregel“** 
 
 ## Warum dieses Problem
 
-Beim Regal war die Höhe der beste Schlüssel. Bei freier Platzierung ist es meistens die Fläche („das größte zuerst“), und mit der Höhe sortiert ist das Regal bei mittleren und breit gestreuten Rechtecken sogar besser als Skyline und MaxRects. Der beste Schlüssel hängt also vom Verfahren ab. Die Demo zeigt an zwölf Rechtecken, dass der beste Regalplan vier Behälter braucht, jede freie Platzierung nach der Fläche aber drei, und misst dasselbe an je 100 Zufallsinstanzen in 16 Zellen, denselben Instanzen wie in Stück 7.
+Beim Regal war die Höhe der beste Schlüssel. Bei freier Platzierung ist es meistens die Fläche („das größte zuerst“), und mit der Höhe sortiert ist das Regal bei mittleren (ab n = 20) und breit gestreuten Rechtecken (ab n = 40) sogar besser als Skyline und MaxRects. Der beste Schlüssel hängt also vom Verfahren ab. Die Demo zeigt an zwölf Rechtecken, dass der beste Regalplan vier Behälter braucht, jede freie Platzierung nach der Fläche aber drei, und misst dasselbe an je 100 Zufallsinstanzen in 16 Zellen, denselben Instanzen wie in Stück 7.
 
 ## Modell
 
@@ -26,12 +26,12 @@ Alle Zahlen sind Messungen an den Instanzen dieser Demo (feste Seeds), nachgerec
 |---|---|
 | Beispiel 1 (zwölf Rechtecke, Schranke 3, Optimum 3) | Der beste Regalplan (Höhe) braucht **4** Behälter, Skyline, MaxRects BSSF, BAF und BL nach Fläche je **3** (Tabelle unten) |
 | Beispiel 2 (zwölf andere Rechtecke, Schranke 2, Optimum 2) | Von den 20 Kombinationen findet nur **eine** das Optimum 2: MaxRects BSSF nach Fläche |
-| Welcher Schlüssel ist am besten? | Beim Regal die **Höhe** in allen **16** Zellen; bei MaxRects BSSF die **Fläche** in **14** Zellen (in den übrigen zwei gleichauf mit der Höhe), bei Skyline die Fläche in **11**, die Höhe in 4, einmal gleichauf |
+| Welcher Schlüssel ist am besten? | Beim Regal die **Höhe** in allen **16** Zellen; bei MaxRects BSSF die **Fläche** in **14** Zellen (in den übrigen zwei gleichauf mit der Höhe), bei Skyline die Fläche in **11**, die Höhe in 4, einmal gleichauf (klar ist der Vorsprung der Fläche bei Skyline nur bei mittleren und breit gestreuten Rechtecken; bei kleinen und hohen schmalen liegt der Unterschied im Rauschen) |
 | Schlägt das Regal mit Höhe die freien Verfahren mit Höhe? | In **5** von 16 Zellen braucht das Regal mit Höhe im Mittel weniger Behälter als jedes der vier freien Verfahren mit Höhe: mittlere Rechtecke bei n = 20, 40, 80 und breit gestreute bei n = 40, 80 |
 | MaxRects gegen Regal, Instanz für Instanz | MaxRects BSSF mit Fläche braucht gegen das Regal mit Höhe in **307** von 1600 Instanzen weniger Behälter, in 1260 gleich viele und in **33** mehr; im Mittel ist es in **15** von 16 Zellen besser, in einer gleich (klein, n = 80) |
 | Skyline gegen MaxRects, Instanz für Instanz | Skyline mit Fläche braucht gegen MaxRects BSSF mit Fläche in 17 von 1600 Instanzen weniger Behälter, in 1296 gleich viele und in **287** mehr; im Mittel liegt Skyline 0,01 unter bis 0,44 über MaxRects (in einer Zelle besser) |
 | Welche MaxRects-Regel ist am besten? | Mit der Fläche ist BSSF in **14** von 16 Zellen die beste der drei (in 7 allein); die drei Regeln liegen höchstens **0,19** Behälter auseinander |
-| Wie nah am Optimum? | Mit dem jeweils besten Schlüssel treffen bei 12 Rechtecken das Regal 67 bis 80 %, Skyline 66 bis 92 %, MaxRects BSSF 72 bis 95 % der entschiedenen Instanzen, bei 20 Rechtecken 49 bis 96 %, 51 bis 98 % und 60 bis 99 % |
+| Wie nah am Optimum? | Mit Höhe beim Regal und Fläche bei Skyline und MaxRects BSSF treffen bei 12 Rechtecken das Regal 67 bis 80 %, Skyline 66 bis 92 %, MaxRects BSSF 72 bis 95 % der entschiedenen Instanzen, bei 20 Rechtecken 49 bis 96 %, 51 bis 98 % und 60 bis 99 % |
 | Wie viele Instanzen sind nicht entschieden? | **3** von 400 bei 12 und **39** von 400 bei 20 Rechtecken (**27** bei mittleren, 1 bei breit gestreuten, 0 bei kleinen und 11 bei hohen schmalen); die Zahl hängt von der Rechenzeit in Stück 7 ab |
 
 **Beispiel 1** (Behälterzahl je Verfahren und Schlüssel):
